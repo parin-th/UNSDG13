@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN SDG 13: Climate Action - Modern Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-3xl font-extrabold text-blue-600">
+                        SDG 13<span class="text-teal-500">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-2">
+                        <a href="index.html" class="nav-link nav-link-active" id="nav-home">Home</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
+                <a href="index.html" class="block nav-link nav-link-active text-base">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white relative">
+        <div class="hero-content-wrapper container mx-auto px-6 py-36 sm:py-48 md:py-56 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-tight scroll-animate">
+                Climate Action: <span class="block sm:inline">Our Urgent <span class="text-blue-300">Global Mission</span></span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-12 max-w-3xl mx-auto font-light scroll-animate delay-1">
+                Exploring UN SDG 13 – Taking decisive steps towards a sustainable and resilient future for all.
+            </p>
+            <a href="#learn-more" class="btn btn-primary text-xl scroll-animate delay-2">Discover Our Role</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 sm:px-6 py-20" id="learn-more">
+
+        <!-- What is SDG 13? -->
+        <section id="understanding-sdg13" class="section-container mb-24 section-bg-alt shadow-xl scroll-animate">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl text-blue-700 mb-10 text-center md:text-left">Understanding SDG 13: Climate Action</h2>
+            <div class="md:flex md:items-center gap-12">
+                <div class="md:w-3/5">
+                    <p class="content-text mb-6">
+                        Sustainable Development Goal 13 is a pivotal part of the UN's 2030 Agenda, a universal call to <strong class="highlight-text">take urgent action to combat climate change and its devastating impacts</strong>. It's not just an environmental goal; it's a fundamental requirement for sustainable development worldwide.
+                    </p>
+                    <p class="content-text mb-6">Key objectives include integrating climate change measures into all national policies, strengthening resilience and adaptive capacity to climate-related hazards and natural disasters, and improving education, awareness-raising, and human and institutional capacity on climate change mitigation, adaptation, impact reduction, and early warning.
+                    </p>
+                    <p class="content-text">
+                        Recognizing climate change as a borderless challenge, SDG 13 emphasizes the critical need for international cooperation and scaled-up financial and technological support, particularly for developing countries.
+                    </p>
+                </div>
+                <div class="md:w-2/5 mt-10 md:mt-0">
+                    <img src="images/understanding.png" alt="Conceptual art representing global unity for climate action" class="section-image scroll-animate delay-1">
+                </div>
+            </div>
+        </section>
+
+        <!-- Why is it Important? -->
+        <section class="section-container mb-24 section-bg-main scroll-animate">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl text-green-700 mb-10 text-center md:text-left">The Imperative of Climate Action</h2>
+            <div class="md:flex md:items-center gap-12">
+                 <div class="md:w-2/5 mt-10 md:mt-0 order-first md:order-last">
+                    <img src="/images/importance.png" alt="Image depicting a balanced ecosystem vs. one affected by climate change" class="section-image scroll-animate delay-1">
+                </div>
+                <div class="md:w-3/5">
+                    <p class="content-text mb-6">
+                        Addressing climate change is not optional; it's essential for the <strong class="font-semibold text-green-600">survival of ecosystems and the well-being of humanity</strong>.
+                        Its consequences are already evident, affecting everything from food and water security to global health and economic stability.
+                    </p>
+                    <ul class="space-y-4 content-text">
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">&#10004;</span><span><strong class="text-green-600">Temperature Extremes:</strong> Increased frequency of heatwaves and altered weather patterns threaten lives and livelihoods.</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">&#10004;</span><span><strong class="text-green-600">Severe Weather Events:</strong> More intense storms, droughts, and floods cause widespread devastation and displacement.</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">&#10004;</span><span><strong class="text-green-600">Ocean Impacts:</strong> Rising sea levels and ocean acidification endanger coastal regions and marine biodiversity.</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">&#10004;</span><span><strong class="text-green-600">Biodiversity Under Siege:</strong> Species extinction rates are accelerating, disrupting vital ecological services.</span></li>
+                        <li class="flex items-start"><span class="text-green-500 font-bold mr-3 mt-1">&#10004;</span><span><strong class="text-green-600">Resource Vulnerability:</strong> Diminished food and water supplies disproportionately affect the most vulnerable communities.</span></li>
+                    </ul>
+                    <p class="content-text mt-6">
+                        Meaningful climate action is intrinsically linked to achieving broader sustainable development, fostering healthier communities, and ensuring a just transition to a low-carbon economy.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How People Are Affected -->
+        <section class="section-container mb-24 section-bg-alt shadow-xl scroll-animate">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl text-red-700 mb-10 text-center">The Human Dimension of a Changing Climate</h2>
+            <p class="content-text mb-12 text-center max-w-4xl mx-auto">
+                Climate change is a deeply human issue. While its effects are global, the <strong class="font-semibold text-red-600">most marginalized communities often bear the heaviest burdens</strong>, facing amplified risks to their health, safety, and livelihoods despite contributing the least to the crisis.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 md:p-8 flex flex-col scroll-animate delay-1">
+                    <img src="images/card_1.png" alt="Illustration showing climate change's impact on human health" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-red-600 mb-3">Escalating Health Crises</h3>
+                    <p class="flex-grow text-gray-500 leading-relaxed">Increased heat stress, respiratory illnesses, malnutrition, and the spread of climate-sensitive diseases like malaria and dengue fever.</p>
+                </div>
+                <div class="card p-6 md:p-8 flex flex-col scroll-animate delay-2">
+                    <img src="images/card_2.png" alt="Illustration of people displaced by climate-related disasters" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-purple-600 mb-3">Forced Migration & Instability</h3>
+                    <p class="flex-grow text-gray-500 leading-relaxed">
+                        <span class="number-counter" data-target="20">0</span> Million+ people are uprooted annually by sea-level rise, extreme weather, and resource scarcity, fueling climate migration and potential conflicts.
+                    </p>
+                </div>
+                <div class="card p-6 md:p-8 flex flex-col scroll-animate delay-3">
+                    <img src="images/card_3.png" alt="Illustration depicting livelihoods threatened by climate change" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-3">Threatened Livelihoods</h3>
+                    <p class="flex-grow text-gray-500 leading-relaxed">Devastating impacts on agriculture, fisheries, and tourism, undermining economic stability and food security for countless communities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Take Further Action -->
+        <section class="section-container mb-24 section-bg-main scroll-animate">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl text-teal-700 mb-10 text-center md:text-left">Empowering Change: Your Role in Climate Solutions</h2>
+            <p class="content-text mb-12 max-w-4xl md:max-w-none">
+                Addressing the climate crisis requires a paradigm shift and collective mobilization. From individual choices to systemic reforms, every action contributes to a more sustainable future. Here’s how you can be part of the solution:
+            </p>
+            <div class="md:flex md:items-start gap-12">
+                <div class="md:w-3/5">
+                    <ul class="space-y-5 content-text">
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-2xl mr-3 mt-0.5">&rarr;</span><span><strong class="text-teal-600">Adopt a Sustainable Lifestyle:</strong> Reduce your carbon footprint through energy conservation, sustainable transportation, mindful consumption (especially plant-rich diets), and waste reduction.</span></li>
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-2xl mr-3 mt-0.5">&rarr;</span><span><strong class="text-teal-600">Educate and Advocate:</strong> Stay informed on climate science and solutions. Raise awareness in your community and advocate for ambitious climate policies from local to global levels.</span></li>
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-2xl mr-3 mt-0.5">&rarr;</span><span><strong class="text-teal-600">Support Green Initiatives:</strong> Choose businesses and organizations committed to sustainability, renewable energy, and conservation. Invest responsibly.</span></li>
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-2xl mr-3 mt-0.5">&rarr;</span><span><strong class="text-teal-600">Engage in Community Action:</strong> Participate in local environmental projects, support climate justice movements, and encourage sustainable practices in your workplace and neighborhood.</span></li>
+                        <li class="flex items-start"><span class="text-teal-500 font-bold text-2xl mr-3 mt-0.5">&rarr;</span><span><strong class="text-teal-600">Protect and Restore Nature:</strong> Support reforestation, conservation of natural habitats, and regenerative agriculture, as healthy ecosystems are powerful carbon sinks.</span></li>
+                    </ul>
+                </div>
+                <div class="md:w-2/5 mt-10 md:mt-0">
+                    <img src="images/change.png" alt="Diverse group of people engaged in positive climate actions" class="section-image scroll-animate delay-1">
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                 <a href="https://www.un.org/sustainabledevelopment/climate-action/" target="_blank" class="btn btn-secondary text-xl">UN Climate Action Hub</a>
+            </div>
+        </section>
+
+        <!-- Overall -->
+        <section class="section-container section-bg-alt shadow-xl scroll-animate">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl text-indigo-700 mb-10 text-center md:text-left">A Shared Destiny: Forging a Resilient Future</h2>
+             <div class="md:flex md:items-center gap-12">
+                <div class="md:w-2/5 mt-10 md:mt-0 order-last md:order-first">
+                    <img src="/images/future.png" alt="Symbolic image of a green sapling growing in diverse hands, globe in background" class="section-image scroll-animate delay-1">
+                </div>
+                <div class="md:w-3/5">
+                    <p class="content-text mb-6">
+                        SDG 13 is more than a goal; it's an urgent imperative for humanity. The escalating climate crisis demands immediate, ambitious, and coordinated action from all sectors of society. While the challenges are immense, so too are the opportunities for innovation, collaboration, and positive transformation.
+                    </p>
+                    <p class="content-text mb-6">
+                        By embracing our collective responsibility, fostering a <strong class="font-semibold text-indigo-600">global shift towards sustainable practices, investing in green technologies, and ensuring climate justice</strong>, we can navigate the complexities of climate change and build a future that is not only environmentally sound but also more equitable and prosperous for all.
+                    </p>
+                    <p class="content-text">
+                        The journey towards climate resilience is intertwined with every other Sustainable Development Goal. Our success in achieving SDG 13 will determine the health of our planet and the quality of life for generations to come. Let us act with courage, conviction, and unwavering solidarity.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4 text-base">&copy; Parin Thakkar | UN SDG 13 - Climate Action</p>
+            <p class="text-sm">Explore the full <a href="https://sdgs.un.org/goals" target="_blank" class="text-blue-400 hover:text-blue-300 hover:underline">UN Sustainable Development Goals Framework</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button HTML -->
+    <button id="backToTopBtn" title="Go to top" class="btn btn-primary p-3 rounded-full shadow-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

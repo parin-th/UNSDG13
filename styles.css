@@ -1,0 +1,132 @@
+body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .hero-bg {
+            /* Ensure this element can be targeted for parallax */
+            background: linear-gradient(135deg, rgba(22, 57, 90, 0.85), rgba(52, 152, 219, 0.85)), url('/images/hero.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat; /* Ensure the image isn't tiled if smaller than container */
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            position: relative; /* For potential pseudo-elements if needed, not strictly for this parallax version */
+            overflow: hidden; /* Important if the background itself was a transformed child */
+        }
+        .hero-content-wrapper { /* Added wrapper for hero text to ensure it stays centered during parallax */
+            position: relative;
+            z-index: 1;
+        }
+        #understanding-sdg13 p {
+            @apply text-lg md:text-xl leading-relaxed text-gray-600;
+        }
+
+        .section-bg-alt {
+            background-color: #ffffff;
+        }
+        .section-bg-main {
+            background-color: #f8f9fa;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+        }
+        /* Ensure card images are fully visible and not cropped, overriding Tailwind's object-cover if present */
+        .card img {
+            object-fit: contain;
+            /* Tailwind classes w-full and h-48 on the img tag will define the box for object-fit */
+        }
+        .nav-link {
+            @apply px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200;
+        }
+        .nav-link-active {
+            @apply text-blue-600 bg-blue-100 font-semibold;
+        }
+        .btn {
+            @apply font-semibold py-3 px-8 rounded-lg text-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2;
+        }
+        .btn-primary {
+            @apply bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500;
+        }
+        .btn-secondary {
+            @apply bg-teal-500 hover:bg-teal-600 text-white focus:ring-teal-500;
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+        h2 {
+            letter-spacing: -0.03em;
+            color: #1a2b40;
+        }
+        h3 {
+            color: #34495e;
+        }
+        .content-text {
+            @apply text-lg md:text-xl leading-relaxed text-gray-600;
+        }
+        .highlight-text {
+            @apply font-semibold text-blue-500;
+        }
+
+        /* Ensure text in the 'Understanding SDG 13' section matches .content-text styling. */
+        /* Adjust the selector '#understanding-sdg13 p' to target the correct text elements */
+        /* within your 'Understanding SDG 13' section container. */
+        /* For example, if your section has an ID 'sdg13-details', use '#sdg13-details p'. */
+        #understanding-sdg13 p { /* Targets paragraph text within the section */
+            @apply text-lg md:text-xl leading-relaxed text-gray-600;
+        }
+        .section-image {
+            @apply rounded-xl shadow-lg w-full h-auto object-contain border-2 border-gray-100;
+        }
+        .section-container {
+            @apply p-8 md:p-16 rounded-2xl;
+        }
+        .icon-placeholder {
+            @apply bg-blue-100 text-blue-600 p-3 rounded-full inline-flex items-center justify-center mb-4;
+        }
+
+        /* Styles for scroll animations */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+
+        /* Back to Top Button */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            z-index: 100;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        #backToTopBtn.show {
+            display: inline-flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Number Counter Style */
+        .number-counter {
+            font-weight: 700; /* Make the number stand out */
+            color: #a855f7; /* Match the heading color of its card */
+        }
